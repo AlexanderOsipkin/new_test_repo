@@ -1,12 +1,10 @@
 <h1 align="center">Проект по автоматизации тестирования онлайн кинотеатра
-<p align="center">
-<a href="https://start.ru/" target="_blank">
-<img src="Pictures/start.logo.png" alt="онлайн кинотеатр start" > </a> 
-</p></h1>
-
-
-# Проект по автоматизации тестирования (web)
-онлайн кинотеатра start (https://start.ru/)
+<p>
+<a href="https://start.ru/" target="_blank"> 
+<img src="Pictures/start.logo.png" alt="онлайн кинотеатр start"> 
+</a>
+</p>
+</h1>
 
 ## Содержание
 + [Тест-кейсы](#Тесты)
