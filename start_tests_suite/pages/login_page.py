@@ -1,7 +1,16 @@
-from selene import browser, have, be
+import os
+from selene import browser, be
+from dotenv import load_dotenv
 
 
 class LoginPage:
+
+    def load_env(self):
+        load_dotenv()
+        return self
+
+    login = os.getenv('USER_LOGIN')
+    password = os.getenv('USER_PASSWORD')
 
     def open_maim_page(self):
         browser.open('/')
@@ -18,13 +27,11 @@ class LoginPage:
         return self
 
     def enter_email(self):
-        browser.element('[id="signField"]').should(be.blank).type(
-            'qagurutestuser@yandex.ru'
-        )
+        browser.element('[id="signField"]').should(be.blank).type('{USER_LOGIN}')
         return self
 
     def enter_password(self):
-        browser.element('[id="signPassword"]').should(be.blank).type('qagurutestuser1')
+        browser.element('[id="signPassword"]').should(be.blank).type('{USER_PASSWORD}')
         return self
 
     def press_login_button(self):
