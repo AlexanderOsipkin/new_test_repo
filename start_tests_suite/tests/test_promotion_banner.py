@@ -8,7 +8,7 @@ from start_tests_suite.pages.promotion_page import promotion_banner
 @allure.feature('Promo page')
 @allure.label('microservice', 'promo page')
 @allure.label('owner', 'Alexander Osipkin')
-@allure.tag('smoke', 'regress', 'web')
+@allure.tag('regress', 'web')
 @allure.severity('major')
 @allure.label('layer', 'web')
 def test_promotion_banner():

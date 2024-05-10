@@ -59,7 +59,7 @@ def browser_cfg():
     browser.config.base_url = 'https://start.ru/'
     driver_options = webdriver.ChromeOptions()
     browser.config.driver_options = driver_options
-    browser.config.timeout = 15
+    browser.config.timeout = 10
     browser.config.window_height = 1080
     browser.config.window_width = 1920
 
