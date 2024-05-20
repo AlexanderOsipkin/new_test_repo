@@ -18,5 +18,5 @@ def test_promotion_banner():
     with allure.step("Открываем страницу промоакции"):
         promotion_banner.check_promotion_page()
 
-    with allure.step("Нажимаем на кнопу Попробовать"):
+    with allure.step("Нажимаем на кнопу - Попробовать"):
         promotion_banner.click_to_the_try_button()

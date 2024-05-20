@@ -21,10 +21,10 @@ def test_login_page():
     with allure.step("Нажимаем на кнопку логина"):
         login_page.click_login_button()
 
-    with allure.step("Вводим емеил"):
+    with allure.step("Вводим емеил пользователя"):
         login_page.enter_email()
 
-    with allure.step("Вводим пароль"):
+    with allure.step("Вводим пароль пользователя"):
         login_page.enter_password()
 
     with allure.step("Нажимаем на кнопку авторизации"):
