@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 
 class LoginPage:
 
-    def load_env(self):
-        load_dotenv()
-        return self
-
-    login = os.getenv('USER_LOGIN')
-    password = os.getenv('USER_PASSWORD')
+    # def load_env(self):
+    #     load_dotenv()
+    #     return self
+    #
+    # login = os.getenv('USER_LOGIN')
+    # password = os.getenv('USER_PASSWORD')
 
     def open_maim_page(self):
         browser.open('/')
@@ -27,11 +27,15 @@ class LoginPage:
         return self
 
     def enter_email(self):
-        browser.element('[id="login"]').should(be.blank).type('{USER_LOGIN}')
+        load_dotenv()
+        login = os.getenv('USER_LOGIN')
+        browser.element('[id="login"]').should(be.blank).type(login).press_enter()
         return self
 
     def enter_password(self):
-        browser.element('[id="password"]').should(be.blank).type('{USER_PASSWORD}')
+        load_dotenv()
+        password = os.getenv('USER_PASSWORD')
+        browser.element('[id="password"]').should(be.blank).type(password)
         return self
 
     def press_login_button(self):
