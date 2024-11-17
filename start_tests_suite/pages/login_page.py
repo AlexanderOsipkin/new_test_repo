@@ -17,7 +17,7 @@ class LoginPage:
         return self
 
     def click_avatar_button(self):
-        browser.element('.HeaderMenu_header-menu__avatar-adult__kpDMs').click()
+        browser.element('.HeaderMenu_header-menu__login-button__4PeyG').click()
         return self
 
     def click_login_button(self):
@@ -27,15 +27,15 @@ class LoginPage:
         return self
 
     def enter_email(self):
-        browser.element('[id="signField"]').should(be.blank).type('{USER_LOGIN}')
+        browser.element('[id="login"]').should(be.blank).type('{USER_LOGIN}')
         return self
 
     def enter_password(self):
-        browser.element('[id="signPassword"]').should(be.blank).type('{USER_PASSWORD}')
+        browser.element('[id="password"]').should(be.blank).type('{USER_PASSWORD}')
         return self
 
     def press_login_button(self):
-        browser.element('[data-testid="signin_button_text"]').click()
+        browser.element('[testid="signin_button"]').click()
         return self
 
 
