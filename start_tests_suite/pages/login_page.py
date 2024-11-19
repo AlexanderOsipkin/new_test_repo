@@ -5,13 +5,6 @@ from dotenv import load_dotenv
 
 class LoginPage:
 
-    # def load_env(self):
-    #     load_dotenv()
-    #     return self
-    #
-    # login = os.getenv('USER_LOGIN')
-    # password = os.getenv('USER_PASSWORD')
-
     def open_maim_page(self):
         browser.open('/')
         return self
