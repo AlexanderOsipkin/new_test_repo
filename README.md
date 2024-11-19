@@ -28,3 +28,15 @@
 <a name="Технологии">
 
 ## Технологии и инструменты
+<p align="center">
+<img width="6%" title="PyCharm" src="/Pictures/PyCharm_Icon.svg">
+<img width="6%" title="Python" src="/Pictures/python-original.svg">
+<img width="6%" title="Pytest" src="/Pictures/pytest-original.svg">
+<img width="6%" title="Selenium" src="/Pictures/selenium.png">
+<img width="6%" title="Selene" src="/Pictures/selenoid.png">
+<img width="6%" title="Jenkins" src="/Pictures/jenkins-original.svg">  
+<img width="6%" title="Allure TestOps" src="/Pictures/allure.png">
+<img width="6%" title="Telegram" src="/Pictures/telegram.svg">
+<img width="6%" title="Browserstack" src="/Pictures/Browserstack.svg"> 
+<img width="6%" title="Appium" src="/Pictures/Appium.svg"> 
+</p>
